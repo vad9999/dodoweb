@@ -37,6 +37,8 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20px);
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left:  calc(calc(100% - calc(300px * 4 + 20px * 3)) /2 );
   padding-right:  calc(calc(100% - calc(300px * 4 + 20px * 3)) /2 );
 }
@@ -305,5 +307,48 @@ header ul li:hover {
 }
 
 .card .btn-add:hover {
+  background-color: #ffc9a2;
+}
+
+.footer__up {
+  display: block;
+  position: static;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 111, 0);
+  min-width: 100vw;
+}
+
+.footer__up img {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.footer__up span {
+  color: white;
+  position: relative;
+  height: 100%;
+  top: calc(60px - 30px - 9px);
+  text-align: center;
+  font-size: 18px;
+  right: calc((300px * 4 + 20px * 3) / 2 - 360px);
+}
+
+.footer__up button {
+  position: absolute;
+  right: 0;
+  top: calc(60px - 30px - 20px);
+  border: none;
+  color: rgb(255, 111, 0);
+  background-color: #ffe3c8;
+  height: 40px;
+  width: 175px;
+  border-radius: 55px;
+  font-size: 16px;
+}
+
+.footer__up button:hover {
   background-color: #ffc9a2;
 }
