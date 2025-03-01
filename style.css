@@ -37,9 +37,42 @@ body {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: calc(calc(100% - calc(300px * 4 + 20px * 3)) / 2);
-  padding-right: calc(calc(100% - calc(300px * 4 + 20px * 3)) / 2);
+  padding-left: calc((100% - (300px * 4 + 20px * 3)) / 2);
+  padding-right: calc((100% - (300px * 4 + 20px * 3)) / 2);
+  display: flex;
+  justify-content: start;
+  margin-bottom: 25px;
 }
+
+.choise ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.choise ul li {
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choise ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.choise ul li:hover {
+  color: rgb(255, 111, 0);
+}
+.choise ul li b {
+  cursor: pointer;
+}
+
 .choise button {
   font-family: "DodoRoundedv2Regular", sans-serif;
   border-radius: 55px;
@@ -49,10 +82,61 @@ body {
   background-color: rgb(255, 111, 0);
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .choise button:hover {
   background-color: #e05e00;
+}
+
+/* Dropdown menu styles */
+.choise .dropdown {
+  position: relative;
+}
+
+.choise .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.choise .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.choise .dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.choise .dropdown-content ul li {
+  padding: 8px 16px;
+}
+
+.choise .dropdown-content ul li:hover {
+  background-color: rgb(255, 111, 0);
+  color: white;
+}
+
+.choise .dropdown {
+  position: relative;
+}
+
+.choise .dropdown .dropbtn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.choise .dropdown .dropbtn:hover {
+  color: rgb(255, 111, 0);
 }
 
 header .circle {
@@ -91,32 +175,6 @@ header ul li {
 }
 
 header ul li:hover {
-  color: rgb(255, 111, 0);
-}
-
-.choise {
-  width: 100%;
-  justify-content: start;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.choise ul {
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-}
-
-.choise ul li {
-  list-style-type: none;
-  margin: 10px 0px 10px 0px;
-  color: black;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
-.choise ul li:hover {
   color: rgb(255, 111, 0);
 }
 
@@ -238,6 +296,7 @@ header ul li:hover {
   gap: 20px;
   justify-content: center;
   justify-items: center;
+  margin-bottom: 100px;
 }
 
 .card {

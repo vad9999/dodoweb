@@ -39,7 +39,7 @@
             </span>
           </div>
           <div class="text_dilivery">
-            <!-- <span>32 мин &#8226 4.79</span> -->
+            <span>32 мин &#8226 4.79</span>
             <img src="img/zvezda.png" alt="" />
           </div>
         </div>
@@ -47,38 +47,211 @@
     </div>
     <div class="choise">
       <ul>
-        <li><b>Пиццы</b></li>
-        <li><b>Комбо</b></li>
-        <li><b>Закуски</b></li>
-        <li><b>Кофе</b></li>
-        <li><b>Напитки</b></li>
-        <li><b>Десерты</b></li>
-        <li><b>Соусы</b></li>
-        <li><b>Другие товары</b></li>
-        <li><b>Новинки</b></li>
-        <li><b>Завтрак</b></li>
+        <li>
+          <a href="#pizza"><b>Пиццы</b></a>
+        </li>
+        <li>
+          <a href="#combo"><b>Комбо</b></a>
+        </li>
+        <li>
+          <a href="#snacks"><b>Закуски</b></a>
+        </li>
+        <li>
+          <a href="#coffee"><b>Кофе</b></a>
+        </li>
+        <li>
+          <a href="#drinks"><b>Напитки</b></a>
+        </li>
+        <li>
+          <a href="#desserts"><b>Десерты</b></a>
+        </li>
+        <li>
+          <a href="#sauces"><b>Соусы</b></a>
+        </li>
+        <li>
+          <a href="#other"><b>Другие товары</b></a>
+        </li>
+        <li>
+          <a href="#new"><b>Новинки</b></a>
+        </li>
+        <li>
+          <a href="#breakfast"><b>Завтрак</b></a>
+        </li>
         <li class="dropdown">
-          <!-- <b>Ещё &#709</b> -->
+          <b>Ещё &#709</b>
           <div class="dropdown-content">
             <ul>
-              <li>Хиты</li>
-              <li>На компанию</li>
-              <li>Любят дети</li>
+              <li><a href="#hits">Хиты</a></li>
+              <li><a href="#company">На компанию</a></li>
+              <li><a href="#kids">Любят дети</a></li>
             </ul>
           </div>
         </li>
         <li>
-          <!-- <b>&#8226  Акции</b></li> -->
+          <b >&#8226  Акции</b></li>
+        </li>
+        <li>
+          <button>
+            <p>Корзина</p>
+          </button>
         </li>
       </ul>
-
-      <button>
-        <p>Корзина</p>
-      </button>
     </div>
 
-    <div class="container">
+    <div class="container" id="pizza">
       <h3 class="title__block">Пиццы</h3>
+      <div class="products">
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945efdad887826af097affebe0a06a.avif"
+            alt="Товар 1"
+          />
+          <div class="title">Товар 1</div>
+          <div class="description">
+            Описание товара 1. Это отличный продукт для всех.
+          </div>
+          <div class="price">от 500 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945f0021ed7836b1dec4f41e3e5b63.avif"
+            alt="Товар 2"
+          />
+          <div class="title">Товар 2</div>
+          <div class="description">
+            Описание товара 2. Он идеально подходит для вашего дома. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Modi vero repellat,
+            laborum aut eius ad eos vel. Perspiciatis animi tempore amet eius
+            ab, perferendis magni cumque minima possimus numquam consequatur?
+          </div>
+          <div class="price">от 650 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945efa1c6a73468ff43b55fba41413.avif"
+            alt="Товар 3"
+          />
+          <div class="title">Товар 3</div>
+          <div class="description">
+            Описание товара 3. Новый уровень комфорта и стиля. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Magni dignissimos
+            impedit excepturi. Repellat, incidunt optio veniam aspernatur odio
+            soluta!
+          </div>
+          <div class="price">от 450 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945f583c78769e8f9f1f225d3732b6.avif"
+            alt="Товар 4"
+          />
+          <div class="title">Товар 4</div>
+          <div class="description">
+            Описание товара 4. Наслаждайтесь качеством и элегантностью.
+          </div>
+          <div class="price">от 750 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01948d0018367277a78c0922eec5410e.avif"
+            alt="Товар 5"
+          />
+          <div class="title">Товар 5</div>
+          <div class="description">
+            Описание товара 5. Наслаждайтесь качеством и элегантностью.
+          </div>
+          <div class="price">от 750 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="combo">
+      <h3 class="title__block">Комбо</h3>
+      <div class="products">
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945efdad887826af097affebe0a06a.avif"
+            alt="Товар 1"
+          />
+          <div class="title">Товар 1</div>
+          <div class="description">
+            Описание товара 1. Это отличный продукт для всех.
+          </div>
+          <div class="price">от 500 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945f0021ed7836b1dec4f41e3e5b63.avif"
+            alt="Товар 2"
+          />
+          <div class="title">Товар 2</div>
+          <div class="description">
+            Описание товара 2. Он идеально подходит для вашего дома. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Modi vero repellat,
+            laborum aut eius ad eos vel. Perspiciatis animi tempore amet eius
+            ab, perferendis magni cumque minima possimus numquam consequatur?
+          </div>
+          <div class="price">от 650 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945efa1c6a73468ff43b55fba41413.avif"
+            alt="Товар 3"
+          />
+          <div class="title">Товар 3</div>
+          <div class="description">
+            Описание товара 3. Новый уровень комфорта и стиля. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Magni dignissimos
+            impedit excepturi. Repellat, incidunt optio veniam aspernatur odio
+            soluta!
+          </div>
+          <div class="price">от 450 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01945f583c78769e8f9f1f225d3732b6.avif"
+            alt="Товар 4"
+          />
+          <div class="title">Товар 4</div>
+          <div class="description">
+            Описание товара 4. Наслаждайтесь качеством и элегантностью.
+          </div>
+          <div class="price">от 750 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://media.dodostatic.com/image/r:292x292/01948d0018367277a78c0922eec5410e.avif"
+            alt="Товар 5"
+          />
+          <div class="title">Товар 5</div>
+          <div class="description">
+            Описание товара 5. Наслаждайтесь качеством и элегантностью.
+          </div>
+          <div class="price">от 750 ₽</div>
+          <button class="btn-add">Выбрать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="snacks">
+      <h3 class="title__block">Закуски</h3>
       <div class="products">
         <div class="card">
           <img
