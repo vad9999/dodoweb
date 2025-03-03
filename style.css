@@ -288,6 +288,8 @@ header ul li:hover {
   display: inline-block;
   place-items: center;
   width: calc(300px * 4 + 20px * 3);
+  padding-left: calc(calc(100% - calc(300px * 4 + 20px * 3)) / 2);
+  padding-right: calc(calc(100% - calc(300px * 4 + 20px * 3)) / 2);
 }
 
 .products {
@@ -450,6 +452,11 @@ header ul li:hover {
   justify-content: center;
 }
 
+.footer-part {
+  display: flex;
+  align-items: center;
+}
+
 .footer .footer-part.navigation-links .links-section {
   margin-right: 60px;
   margin-bottom: 30px;
@@ -473,7 +480,6 @@ header ul li:hover {
   color: #ff5000;
 }
 
-/* Mobile App Links */
 .footer .footer-part.mobile-apps {
   display: flex;
   gap: 12px;
@@ -525,9 +531,14 @@ header ul li:hover {
 }
 
 /* Footer Stats */
-.footer .footer-part.stats {
+.stats {
   display: flex;
-  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.stats-part {
+  width: 30%;
 }
 
 .footer .money__value {
@@ -550,14 +561,24 @@ header ul li:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Copyright and Organization Details */
+.footer .copyright {
+  display: flex;
+  align-items: center;
+}
+
 .footer .footer-row.copyright.social {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer_logo {
+  color: rgba(255, 255, 255, 0.7);
+  width: 100px;
 }
 
 .footer .footer-part.organization-details {
@@ -575,7 +596,6 @@ header ul li:hover {
   text-decoration: none;
 }
 
-.footer .footer-part.stats,
 .footer .footer-part.right-side {
   width: 20%;
 }
