@@ -42,6 +42,7 @@ body {
   display: flex;
   justify-content: start;
   margin-bottom: 25px;
+  justify-content: space-between;
 }
 
 .choise ul {
@@ -268,6 +269,8 @@ header ul li:hover {
   text-align: left;
   font-size: 14px;
   font-weight: 200;
+  position: relative;
+  cursor: pointer;
 }
 
 .text_dilivery img {
@@ -275,11 +278,97 @@ header ul li:hover {
   height: 15px;
 }
 
+#text-dilivery-dropdown {
+  display: none;
+  position: absolute;
+  color: white;
+  background: #373536;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 10px;
+  z-index: 1000;
+  width: 450px;
+}
+
+.text_dilivery:hover #text-dilivery-dropdown {
+  display: block;
+}
+
+.title-dropdown{
+  font-size: 18px;
+  margin-bottom:40px;
+}
+
+#title-dropdown-last-child {
+  color: #a4a5af;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-dropdown {
+  display: flex;
+  gap: 40px;
+}
+
+.text-dropdown-left h1 {
+  font-weight: bold;
+}
+
+.text-dropdown-left p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 0px;
+}
+
+.text-dropdown-left span {
+  color: #a4a5af;
+  font-family: DodoRoundedv2Regular;
+  line-height: 1.1;
+}
+
+.text-dropdown-right {
+  width: 200px;
+}
+
+.right-mark {
+  display: flex;
+}
+
+.right-mark h1 {
+  padding-right: 7px;
+  color: #ffcd00;
+}
+
+.right-mark img {
+  height: 21px;
+  width: 21px;
+  padding: 0px;
+  margin: 0px;
+  gap: 7px;
+}
+
+.text-dropdown-right p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 0px;
+}
+
+.text-dropdown-right span {
+  color: #a4a5af;
+  font-family: DodoRoundedv2Regular;
+  line-height: 1.1;
+}
+
 .title__block {
   width: 100%;
   font-size: 32px;
   text-align: start;
   margin-bottom: 30px;
+}
+
+.text-dropdown-footer {
+  padding-top: 17px;
+  color:#a4a5af;
 }
 
 .container {
